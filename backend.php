@@ -1,3 +1,0 @@
-<?
-    echo("Here is backend");
-?>

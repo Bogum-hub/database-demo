@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登入</title>
+    <link type="text/css" rel="stylesheet" href="css/reset.css">
+    <style type="text/css">
+
+        html, body{
+            height: 100%;
+            font-size: 24px;
+        }
+        body{
+            background: url(
+                "https://images.pexels.com/photos/2983101/pexels-photo-2983101.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+            )no-repeat center center / cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .login{
+            width: 600px;
+            height: 400px;
+            background: rgba(0,0,0,.5);
+            border-radius: 10px;
+            border:10px solid #fff;
+            box-shadow: 0 0 60px #000;
+            backdrop-filter: blur(5px);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .form{
+            width: 400px;
+            font-family: 'Times New Roman', Times, serif;
+            color: #fff;
+        }
+        .form a{
+            font-family: '微軟正黑體';
+            color: #fff;
+            text-decoration: none;
+            display: block;
+            background: red;
+            width: 100px;
+        }
+        .form a:hover{
+            color: #000;
+            background: #fff;
+        }
+        
+        .form h2{
+            margin-bottom: 20px;
+            border-bottom: 1px solid #fff;
+        }
+        .form label{
+            line-height: 40px;
+        }
+        .btn-group{
+            margin-bottom: 10px;
+        }
+        
+
+    </style>
+
+</head>
+<body>
+    <div class="login">
+        <form class="form" name="form" method="post" action="connect.php">
+            <h2>會員登入</h2>
+            <div class="group">
+                <label for="">帳號：</label> 
+                <input type="text" name="id">
+            </div>
+            <div class="group">
+                <label for="">密碼：</label>   
+                <input type="password" name="pw">
+            </div>
+            <div class="btn-group">
+                <input type="submit" name="button" value="登入" />
+                <input type="reset" name="button" value="重新輸入" /><br>
+            </div>
+            
+            <a href="register.php">申請帳號</a>
+          </form>
+    </div>
+</body>
+</html>
